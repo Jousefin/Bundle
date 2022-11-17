@@ -1,0 +1,6 @@
+mixin bonos(url, img)
+	div(class='tns-single__content')
+			a(href=`${url}`): img(src=`${img}`, alt="image")
+-for (var i = 0; i < bonos.length; i++)
+	-var d = bonos[i]
+	+bonos(d.url, d.img)

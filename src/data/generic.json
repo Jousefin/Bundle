@@ -136,5 +136,19 @@
 			"url":"#",
 			"img":"https://betswing.com/wp-content/uploads/QuinielaNFL_banner.png"
 		}
+	],
+	"bonos": [
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-BARQUISIMETO.jpg"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg"
+		}
 	]
 }

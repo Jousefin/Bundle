@@ -18,6 +18,40 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
+var tnsCarousel = exports.tnsCarousel = function tnsCarousel() {
+	var slider = tns({
+		container: '#tnsCarousel',
+		items: 1,
+		slideBy: 1,
+		swipeAngle: false,
+		speed: 400,
+		edgePadding: 40,
+		nav: false,
+		mouseDrag: true,
+		controlsText: ['<i class="tns-carousell__prev fas fa-chevron-left"></i>', '<i class="tns-carousell__next fas fa-chevron-right"></i>'],
+		responsive: {
+			480: {
+				items: 2
+			},
+			640: {
+				items: 3
+			},
+			800: {
+				items: 4
+			},
+			960: {
+				items: 5
+			},
+			1120: {
+				items: 6
+			},
+			1280: {
+				items: 7
+			}
+		}
+	});
+};
+
 },{}],2:[function(require,module,exports){
 'use strict';
 
@@ -40,12 +74,13 @@ var topNav = exports.topNav = function topNav() {
 },{}],3:[function(require,module,exports){
 'use strict';
 
-var _tnsSlider = require('./components/tns-slider');
-
 var _topNav = require('./components/topNav');
+
+var _tnsSlider = require('./components/tns-slider');
 
 (0, _topNav.topNav)();
 (0, _tnsSlider.tnsSingle)();
+(0, _tnsSlider.tnsCarousel)();
 
 },{"./components/tns-slider":1,"./components/topNav":2}]},{},[3]);
 

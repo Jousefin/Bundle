@@ -99,28 +99,42 @@
 	],
 	"menu": [
 		{
-			"url" : "https://ed-grid.com/documentacion/layout-css-grid.html",
+			"url": "https://ed-grid.com/documentacion/layout-css-grid.html",
 			"menuItem": "DEPORTES"
 		},
 		{
-			"url" : "page2.html",
+			"url": "page2.html",
 			"menuItem": "PROMOCIONES"
 		},
 		{
-			"url" : "/envivo",
+			"url": "/envivo",
 			"menuItem": "EN VIVO"
 		},
 		{
-			"url" : "/casino",
+			"url": "/casino",
 			"menuItem": "CASINO"
 		},
 		{
-			"url" : "/caballos",
+			"url": "/caballos",
 			"menuItem": "CABALLOS"
 		},
 		{
-			"url" : "/contacto",
+			"url": "/contacto",
 			"menuItem": "CONTACTO"
+		}
+	],
+	"slider": [
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/Quniela_banner.png"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/LakersVSPistons_banner.png"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/QuinielaNFL_banner.png"
 		}
 	]
 }

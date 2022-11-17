@@ -1,6 +1,5 @@
-import {tnsSingle} from './components/tns-slider';
-tnsSingle();	
+import { tnsSingle } from './components/tns-slider';
+import { topNav } from './components/topNav';
 
-
-import {topNav} from './components/topNav';
 topNav();
+tnsSingle();

@@ -1,0 +1,6 @@
+mixin slider(url, img)
+	div(class='tns-single__content')
+			a(href=`${url}`): img(src=`${img}`, alt="image")
+-for (var i = 0; i < slider.length; i++)
+	-var d = slider[i]
+	+slider(d.url, d.img)

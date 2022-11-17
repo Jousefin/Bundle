@@ -1,6 +1,5 @@
 .top-nav{
-	border-bottom 	: 1px solid #000;
-	background    	: #FFF;
+	background    	: #FF6600;
 	position      	: fixed;
 	top           	: 0;
 	width         	: 100%;
@@ -19,11 +18,14 @@
 
 	}
 
-	&__
+	&__align{
+		background-color: #292929;
+		padding: 0.8rem;
+	}
 
 	&__link{
 		align-self: center;
-		background-color: #292929;
+		
 	}
 	&__logo{
 		height: 2.1rem;
@@ -52,29 +54,49 @@
 		}
 		@include from(lg){
 			align-self: center;
-			margin: 0;
+			margin: 1.2rem 0;
 			padding: 0;
 		}
 	}
 	&__li{
+		color: #fff;
+		margin-left: 1em;
+		list-style-type: none;
+		display: inline-block;
 		@include fromTo(s,lg){
+			color: #000;
 			display: block;
 			border-bottom: 1px solid #DFE0E0;
 			padding: 10px 0;
 			margin: 0;
-
 		}
-		margin-left: 1em;
-		list-style-type: none;
-		display: inline-block;
+		
 	}
 	&__anchor{
 		@include fromTo(s,lg){
 			display: block;
 		}
-
 	}
-
+	&__buttons{
+		margin: 0.5rem 0;      
+		
+		.btn{
+			color: white;
+		}
+		.btn__login{
+			background-color: #2FCF00;
+			border: 1px solid #2FCF00;
+			padding: 0.5rem;
+			border-radius: 3px;
+		}
+	
+		.btn__register{
+			background-color: #2FCF00;
+			border: 1px solid #2FCF00;
+			padding: 0.5rem;
+			border-radius: 3px;
+		}
+	}
 	&__mb-iconMenu {
 		position: relative;
 		align-self: center;
@@ -102,16 +124,4 @@
 		}
 	}
 
-}
-
-.butons-user{
-	display: flex;
-	
-	&__btn-login{
-		color: red;
-	}
-
-	&__btn-signup{
-		color: red;
-	}
 }

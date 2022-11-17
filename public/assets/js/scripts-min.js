@@ -9,6 +9,8 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 		container: '#tnsSingle',
 		items: 1,
 		slideBy: 1,
+		autoplay: true,
+		autoplayButtonOutput: false,
 		speed: 1000,
 		mode: 'gallery',
 		mouseDrag: true,
@@ -42,9 +44,8 @@ var _tnsSlider = require('./components/tns-slider');
 
 var _topNav = require('./components/topNav');
 
-(0, _tnsSlider.tnsSingle)();
-
 (0, _topNav.topNav)();
+(0, _tnsSlider.tnsSingle)();
 
 },{"./components/tns-slider":1,"./components/topNav":2}]},{},[3]);
 

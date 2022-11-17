@@ -3,6 +3,8 @@ export const tnsSingle = ()=> {
 		container           : '#tnsSingle',
 		items               : 1, 
 		slideBy             : 1,
+		autoplay			: true,
+		autoplayButtonOutput: false,
 		speed               : 1000,
 		mode                : 'gallery',
 		mouseDrag           : true,

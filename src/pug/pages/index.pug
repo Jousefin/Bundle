@@ -5,24 +5,7 @@ append config
 	-content			= 'content'
 	-pageDescription	= 'This website contains a collection of projects developed by Enrique Estrada using a Gulp boilerplate developed by him'
 block main-header
-block main-container 
-	div(class='ed-container')
-		div(class='ed-item')
-			div(class='container')
-				div(class='container__slider')
-					div(class='tns-single' id='tnsSingle')
-						div: div(class='tns-single__content'): span tns Single 1
-						div: div(class='tns-single__content'): span tns Single 2
-						div: div(class='tns-single__content'): span tns Single 3
-
-
-
-	div(class='ed-container')
-		div(class='ed-item')
-			include ../components/pasos
-			include:markdown-it(html) ../md/pasos.md
-
-
-				
+block main-container
+	include ../components/tns-single
 block main-footer
 block scripts

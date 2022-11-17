@@ -1,10 +1,47 @@
+//- mixin menu(url, menuItem)
+//- 	article(class='card class-item')
+//- 		div(class='img-container s-ratio-16-9 s-radius-tr s-radius-tl')
+//- 		div(class='card__data s-border s-radius-br s-radius-bl s-pxy-2')
+//- 			div(class='t5 s-mb-2 s-center')
+//- 			div(class='s-justify')
+//- 				a(href=url  class='button--ghost-alert button--tiny')=menuItem
+
+//- section(class='ed-container item-search')
+//- 	div(class='ed-item')
+//- 		h1 Search Filter
+//- 	div(class='ed-item m-50 l-40')
+//- 		input(type='search', id='searchInput', placeholder='search')
+//- div(class='ed-container')
+//- 	div(class='ed-item')
+
+
+//- 	div(class='ed-grid m-grid-2 l-grid-3 lg-grid-4 row-gap l-big-section')
+//- 		ul(class='top-nav__menu')
+//-                -for(var i = 0; i < menu.length ; i++)
+//- 				-var menus = menu[i]
+//- 				+menu(menus.url, menus.menuItem)
+//- 	button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+//- 		span.hamburger-box
+//- 			span.hamburger-inner
+
 nav(class='top-nav')
 	div(class='top-nav__container')
-		a(href='./', class='top-nav__link')
-			img(src='assets/img/img1.jpg', alt='', class='top-nav__logo')
-		ul(class='top-nav__menu')
-			li(class='top-nav__li'): a(href='./', class='top-nav__anchor') Home
-			li(class='top-nav__li'): a(href='page2.html', 	class='top-nav__anchor') page 2
-		button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
-			span.hamburger-box
-				span.hamburger-inner
+		div(class='top-nav__align')
+			a(href='./', class='top-nav__link')
+				img(src='./assets/img/logo.png', alt='', class='top-nav__logo')
+		div
+			ul(class='top-nav__menu')
+				-for(var i = 0; i < menu.length ; i++)		
+					-var menus = menu[i]
+						li(class='top-nav__li'): a(href= menus.url class='top-nav__anchor')=menus.menuItem
+		div(class='top-nav__align')
+			button(class="btn btn__login") REGISTRATE
+			button(class="btn btn__register") INICIAR SESIÓN
+			button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+						span.hamburger-box
+							span.hamburger-inner
+
+
+
+
+			

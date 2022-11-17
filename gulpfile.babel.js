@@ -213,7 +213,7 @@ gulp.task('sitemap', () => {
 		read: false
 	})
 		.pipe(sitemap({
-			siteUrl: 'https://kikeestrada.github.io/my-pwa/' // remplazar por tu dominio
+			siteUrl: 'https://jousefin.github.io/Bundle/' // remplazar por tu dominio
 		}))
 		.pipe(gulp.dest('./public'))
 });

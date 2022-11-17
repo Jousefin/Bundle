@@ -17,9 +17,6 @@ body {
 		&__slider{
 			min-height: 25vh;
 			background: red;
-			@include from(l){
-				margin-right: 250px;
-			}
 		}
 		&__signup{
 			width: 250px;

@@ -4,51 +4,80 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var tnsSingle = exports.tnsSingle = function tnsSingle() {
+var tnsCarousell = exports.tnsCarousell = function tnsCarousell() {
 	var slider = tns({
-		container: '#tnsSingle',
-		items: 1,
-		slideBy: 1,
-		autoplay: true,
-		autoplayButtonOutput: false,
-		speed: 1000,
-		mode: 'gallery',
-		mouseDrag: true,
-		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
-	});
-};
-
-var tnsCarousel = exports.tnsCarousel = function tnsCarousel() {
-	var slider = tns({
-		container: '#tnsCarousel',
+		container: '#tnsCarousell',
 		items: 1,
 		slideBy: 1,
 		swipeAngle: false,
 		speed: 400,
-		edgePadding: 40,
+		autoplay: true,
 		nav: false,
 		mouseDrag: true,
 		controlsText: ['<i class="tns-carousell__prev fas fa-chevron-left"></i>', '<i class="tns-carousell__next fas fa-chevron-right"></i>'],
 		responsive: {
 			480: {
-				items: 2
+				items: 1
 			},
 			640: {
-				items: 3
+				items: 2
 			},
 			800: {
-				items: 4
+				items: 2
 			},
 			960: {
-				items: 5
+				items: 2
 			},
 			1120: {
+				items: 4
+			},
+			1280: {
+				items: 4
+			}
+		}
+	});
+};
+
+var tnsBanca = exports.tnsBanca = function tnsBanca() {
+	var slider = tns({
+		container: '#tnsBanca',
+		items: 1,
+		slideBy: 1,
+		swipeAngle: false,
+		speed: 400,
+		nav: false,
+		mouseDrag: true,
+		controlsText: ['<i class="tns-carousell__prev fas fa-chevron-left"></i>', '<i class="tns-carousell__next fas fa-chevron-right"></i>'],
+		responsive: {
+			320: {
+				items: 4
+			},
+			800: {
 				items: 6
+			},
+			960: {
+				items: 6
+			},
+			1120: {
+				items: 7
 			},
 			1280: {
 				items: 7
 			}
 		}
+	});
+};
+
+var tnsSingle = exports.tnsSingle = function tnsSingle() {
+	var slider = tns({
+		container: '#tnsSingle',
+		items: 1,
+		slideBy: 1,
+		speed: 1000,
+		autoplay: true,
+		mode: 'gallery',
+		mouseDrag: true,
+		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 	});
 };
 
@@ -79,8 +108,9 @@ var _topNav = require('./components/topNav');
 var _tnsSlider = require('./components/tns-slider');
 
 (0, _topNav.topNav)();
+(0, _tnsSlider.tnsCarousell)();
 (0, _tnsSlider.tnsSingle)();
-(0, _tnsSlider.tnsCarousel)();
+(0, _tnsSlider.tnsBanca)();
 
 },{"./components/tns-slider":1,"./components/topNav":2}]},{},[3]);
 

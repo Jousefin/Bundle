@@ -1,3 +1,7 @@
+body{
+	background-color: #232323 !important;
+}
+
 .top-nav{
 	background    	: #FF6600;
 	position      	: fixed;
@@ -84,17 +88,17 @@
 			color: white;
 		}
 		.btn__login{
-			background-color: #2FCF00;
-			border: 1px solid #2FCF00;
-			padding: 0.5rem;
-			border-radius: 3px;
+			background-color: #2fcf00;
+			border: 1px solid #2fcf00;
+			padding: 0.4rem 0.7rem 0.2rem;
+			border-radius: 4px;
 		}
 	
 		.btn__register{
-			background-color: #2FCF00;
-			border: 1px solid #2FCF00;
-			padding: 0.5rem;
-			border-radius: 3px;
+			background-color: #2fcf00;
+			border: 1px solid #2fcf00;
+			padding: 0.4rem 0.7rem 0.2rem;
+			border-radius: 4px;
 		}
 	}
 	&__mb-iconMenu {

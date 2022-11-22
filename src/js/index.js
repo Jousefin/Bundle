@@ -1,6 +1,8 @@
 import { topNav } from './components/topNav';
-import { tnsSingle, tnsCarousel } from './components/tns-slider';
+import { tnsSingle, tnsCarousell, tnsBanca} from './components/tns-slider';
 
 topNav();
+tnsCarousell();
 tnsSingle();
-tnsCarousel();
+tnsBanca();
+

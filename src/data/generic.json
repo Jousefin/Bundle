@@ -130,11 +130,11 @@
 		},
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/LakersVSPistons_banner.png"
+			"img":"https://betswing.com/wp-content/uploads/PromoFranelas_Banner.png"
 		},
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/QuinielaNFL_banner.png"
+			"img":"https://betswing.com/wp-content/uploads/Quniela_banner.png"
 		}
 	],
 	"bonos": [
@@ -148,7 +148,61 @@
 		},
 		{
 			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg"
+		},{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/QUINIELA-QATAR-MUNDIAL-betswing-Tw.jpg"
+		},
+		{
+			"url":"#",
 			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg"
+		},{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-HORARIO-DE-ATENCION.jpg"
+		},{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg"
+		},{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg"
+		}
+	],
+	"pasos": [
+		{
+			"num":"1",
+			"text":"Regístrate"
+		},
+		{
+			"num":"2",
+			"text":"Carga tu cuenta"
+		},
+		{
+			"num":"3",
+			"text":"¡Y A GANAR!"
+		}
+		
+	],
+	"imgBanca":[
+		{
+			"img":"assets/img/banca/bitcoin-cash-icon.png"
+		},
+		{
+			"img":"assets/img/banca/bitcoin-icon.png"
+		},
+		{
+			"img":"assets/img/banca/ethereum-icon.png"
+		},
+		{
+			"img":"assets/img/banca/litecoin-icon.png"
+		},
+		{
+			"img":"assets/img/banca/usdt-icon.png"
+		},
+		{
+			"img":"assets/img/banca/money-gram-icon.png"
+		},
+		{
+			"img":"assets/img/banca/zelle-icon.png"
 		}
 	]
 }

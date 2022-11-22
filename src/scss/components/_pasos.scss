@@ -1,5 +1,23 @@
-.pasos{
-	&__card{
-		background-color: aqua;
+.pasos {
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	&__card {
+		color: #fff;
+		margin-bottom: 1rem;
 	}
+	&__text{
+		margin-left: 1rem;
+	}
+	&__num {
+		font-size: 25px;
+		font-weight: 800;
+		width: 43px;
+		height: 43px;
+		display: inline-grid;
+		border: 2px solid #FF6600;
+		border-radius: 20px;
+		text-align: center;
+	}
+	
 }

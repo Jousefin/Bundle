@@ -1,0 +1,7 @@
+mixin pasos(num, text)
+	div(class="pasos__card")
+		span(class="pasos__num")= num
+		span(class="pasos__text")= text
+-for (var i = 0; i < pasos.length; i++)
+	-var d = pasos[i]
+	+pasos(d.num, d.text)

@@ -75,6 +75,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 		slideBy: 1,
 		speed: 1000,
 		autoplay: true,
+		autoplayButtonOutput: false,
 		mode: 'gallery',
 		mouseDrag: true,
 		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
@@ -108,7 +109,6 @@ var _topNav = require('./components/topNav');
 var _tnsSlider = require('./components/tns-slider');
 
 (0, _topNav.topNav)();
-(0, _tnsSlider.tnsCarousell)();
 (0, _tnsSlider.tnsSingle)();
 (0, _tnsSlider.tnsBanca)();
 

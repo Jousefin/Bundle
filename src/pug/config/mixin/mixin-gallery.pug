@@ -1,0 +1,5 @@
+mixin imgGallery(img, url, alt)
+	a(href=`${url}`): img(class="img-bonos" src=`${img}`, alt=alt)
+-for (var i = 0; i < imgGallery.length; i++)
+	- var d = imgGallery[i]
+	+imgGallery(d.img, d.url, d.alt)

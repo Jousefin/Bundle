@@ -1,5 +1,5 @@
 mixin imgBanca(img)
-	div(class='tnsBanca__content'): div(class='tnsBanca__content'): img(src=`${img}`, alt="image")
+	div(class='tnsBanca__content'): img(src=`${img}`, alt=alt)
 -for (var i = 0; i < imgBanca.length; i++)
-	-var d = imgBanca[i]
-	+imgBanca( d.img)
+	- var d = imgBanca[i]
+	+imgBanca(d.img)

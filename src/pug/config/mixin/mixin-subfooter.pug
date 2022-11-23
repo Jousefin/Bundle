@@ -1,0 +1,5 @@
+mixin subfooter(text)
+	li(class="textFooter")= text
+-for (var i = 0; i < subfooter.length; i++)
+	-var d = subfooter[i]
+	+subfooter( d.text)

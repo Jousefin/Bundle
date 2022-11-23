@@ -1,0 +1,318 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20221123.085059.18188.0.001.json",
+    "dumpEventTime": "2022-11-23T08:50:59Z",
+    "processId": 18188,
+    "cwd": "C:\\Users\\admin\\Documents\\Betslip\\Bundle",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\admin\\AppData\\Roaming\\npm/node_modules/gulp-cli/bin/gulp.js",
+      "dev"
+    ],
+    "nodejsVersion": "v11.15.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.15.0",
+      "v8": "7.0.276.38-node.19",
+      "uv": "1.27.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.37.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.15.0/node-v11.15.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.15.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19044",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "host": "ItLaptop-13"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff65b8bd24e",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+16366"
+    },
+    {
+      "pc": "0x00007ff65b8bc0f9",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+11929"
+    },
+    {
+      "pc": "0x00007ff65b8bb923",
+      "symbol": "std::basic_ios<char,std::char_traits<char> >::fill+9923"
+    },
+    {
+      "pc": "0x00007ff65b9adc22",
+      "symbol": "uv_loop_fork+89362"
+    },
+    {
+      "pc": "0x00007ff65bdd609e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff65bdd5fd7",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff65be89a14",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff65be7f822",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff65be7e038",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff65be87967",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff65be879e6",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff65bfbf8b1",
+      "symbol": "v8::internal::Factory::NewFillerObject+49"
+    },
+    {
+      "pc": "0x00007ff65c079786",
+      "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27190"
+    },
+    {
+      "pc": "0x000001d530bd0481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1498013696,
+    "totalCommittedMemory": 1498013696,
+    "usedMemory": 1465653096,
+    "availableMemory": 31679008,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 3145728,
+        "committedMemory": 3145728,
+        "capacity": 1546752,
+        "used": 884168,
+        "available": 662584
+      },
+      "old_space": {
+        "memorySize": 1483411456,
+        "committedMemory": 1483411456,
+        "capacity": 1458709696,
+        "used": 1456658408,
+        "available": 2051288
+      },
+      "code_space": {
+        "memorySize": 1572864,
+        "committedMemory": 1572864,
+        "capacity": 1002944,
+        "used": 1002944,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2633728,
+        "committedMemory": 2633728,
+        "capacity": 1733280,
+        "used": 1733280,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 6725632,
+        "committedMemory": 6725632,
+        "capacity": 33823848,
+        "used": 5340776,
+        "available": 28483072
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 18.921,
+    "kernelCpuSeconds": 1.39,
+    "cpuConsumptionPercent": 78.1192,
+    "maxRss": 1547636736,
+    "pageFaults": {
+      "IORequired": 454414,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 3704,
+      "writes": 7
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ACLOCAL_PATH": "C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\admin\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_13584_XEFPWIPYAMSMOCBI",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "ITLAPTOP-13",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Program Files/Git/etc/config.site",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GIT_ASKPASS": "c:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\admin",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\admin",
+    "HOSTNAME": "ItLaptop-13",
+    "INFOPATH": "C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info",
+    "INIT_CWD": "C:\\Users\\admin\\Documents\\Betslip\\Bundle",
+    "LANG": "en_US.UTF-8",
+    "LC_CTYPE": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\admin\\AppData\\Local",
+    "LOGONSERVER": "\\\\ITLAPTOP-13",
+    "MANPATH": "C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Program Files/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Program Files/Git/mingw64",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVM_HOME": "C:\\Users\\Mario Jimenez\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\admin\\bin;C:\\Program Files (x86)\\PHP\\v8.0;C:\\Python310\\Scripts;C:\\Python310;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\dotnet;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Mario Jimenez\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Mario Jimenez\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\npm;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\admin\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/admin/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/admin/AppData/Local/Temp",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "OneDrive": "C:\\Users\\admin\\OneDrive",
+    "PATH": "C:\\Users\\admin\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\admin\\bin;C:\\Program Files (x86)\\PHP\\v8.0;C:\\Python310\\Scripts;C:\\Python310;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\dotnet;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\Mario Jimenez\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Mario Jimenez\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\npm;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\Git\\cmd;C:\\Users\\admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Mario Jimenez\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\admin\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW",
+    "PKG_CONFIG_PATH": "C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8c01",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "C:/Users/admin/Documents/Betslip/Bundle",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "3",
+    "SSH_ASKPASS": "C:/Program Files/Git/mingw64/bin/git-askpass.exe",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\admin\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.73.1",
+    "TMP": "C:\\Users\\admin\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\admin\\AppData\\Local\\Temp",
+    "USERDOMAIN": "ITLAPTOP-13",
+    "USERDOMAIN_ROAMINGPROFILE": "ITLAPTOP-13",
+    "USERNAME": "admin",
+    "USERPROFILE": "C:\\Users\\admin",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\admin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-4c1b57436a-sock",
+    "WINDIR": "C:\\Windows",
+    "ZES_ENABLE_SYSMAN": "1",
+    "asl.log=Destination": "file"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\system32\\tmumh\\20019\\AddOn\\8.55.0.1126\\TmUmEvt64.dll",
+    "C:\\Windows\\system32\\tmumh\\20019\\TmMon\\2.9.0.1043\\tmmon64.dll",
+    "C:\\Windows\\SYSTEM32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\UMPDC.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\bcryptprimitives.dll",
+    "\\\\?\\C:\\Users\\admin\\Documents\\Betslip\\Bundle\\node_modules\\node-sass\\vendor\\win32-x64-67\\binding.node",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll"
+  ]
+}

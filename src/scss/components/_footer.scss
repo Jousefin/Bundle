@@ -1,0 +1,43 @@
+footer{
+	background-color: #292929
+	ul{
+		list-style: none;
+		display: flex;
+	}
+	li{
+		margin: 0 0.5rem;
+	}
+	.sublogo{
+		width: 14vh;
+    	height: 6vh;
+		margin: 2rem 0;
+		}
+	.footer__nav{
+			list-style: none;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+		a{
+			
+			margin: auto 0.1rem;
+			text-decoration: none;
+			line-height: 0cm;
+		}
+		:hover{
+			color: #f60;
+		}
+	
+	}
+	.footer__legal{
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	justify-content: center;	
+		a{
+			text-align: center;
+			justify-content: center;
+			margin: auto 0;
+		}
+}
+}

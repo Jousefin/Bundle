@@ -1,0 +1,18 @@
+mixin Footer(imagen, text, url)
+	-if (imagen !== "")
+		img( class='sublogo' src=`${imagen}`, alt="imagen")
+	-else
+		a(href=`${url}`): li(class="textFooter")= text
+-for (var i = 0; i < footer.length; i++)
+		-var d = footer[i]
+		+Footer(d.imagen, d.text, d.url)
+
+
+mixin Footer(imagen)
+	-if (imagen !== "")
+		img( class='sublogo' src=`${imagen}`, alt="imagen")
+	-else
+		a(href=`${url}`): li(class="textFooter")= text
+-for (var i = 0; i < footer.length; i++)
+		-var d = footer[i]
+		+Footer(d.imagen, d.text, d.url)

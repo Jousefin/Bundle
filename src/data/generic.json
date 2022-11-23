@@ -97,6 +97,8 @@
 			"live": "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
 		}
 	],
+
+
 	"menu": [
 		{
 			"url": "https://ed-grid.com/documentacion/layout-css-grid.html",
@@ -137,34 +139,42 @@
 			"img":"https://betswing.com/wp-content/uploads/Quniela_banner.png"
 		}
 	],
-	"bonos": [
+	"imgGallery": [
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg"
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg",
+			"alt":"imagen de bono"
 		},
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-BARQUISIMETO.jpg"
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-BARQUISIMETO.jpg",
+			"alt":"imagen de bono"
 		},
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg"
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg",
+			"alt":"imagen de bono"
 		},{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/QUINIELA-QATAR-MUNDIAL-betswing-Tw.jpg"
+			"img":"https://betswing.com/wp-content/uploads/QUINIELA-QATAR-MUNDIAL-betswing-Tw.jpg",
+			"alt":"imagen de bono"
 		},
 		{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg"
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg",
+			"alt":"imagen de bono"
 		},{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/BETSWING-HORARIO-DE-ATENCION.jpg"
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-HORARIO-DE-ATENCION.jpg",
+			"alt":"imagen de bono"
 		},{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg"
+			"img":"https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg",
+			"alt":"imagen de bono"
 		},{
 			"url":"#",
-			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg"
+			"img":"https://betswing.com/wp-content/uploads/BETSWING-APP.jpg",
+			"alt":"imagen de bono"
 		}
 	],
 	"pasos": [
@@ -184,25 +194,68 @@
 	],
 	"imgBanca":[
 		{
-			"img":"assets/img/banca/bitcoin-cash-icon.png"
+			"img":"assets/img/banca/bitcoin-cash-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/bitcoin-icon.png"
+			"img":"assets/img/banca/bitcoin-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/ethereum-icon.png"
+			"img":"assets/img/banca/ethereum-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/litecoin-icon.png"
+			"img":"assets/img/banca/litecoin-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/usdt-icon.png"
+			"img":"assets/img/banca/usdt-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/money-gram-icon.png"
+			"img":"assets/img/banca/money-gram-icon.png",
+			"alt":"imagen de banca"
 		},
 		{
-			"img":"assets/img/banca/zelle-icon.png"
+			"img":"assets/img/banca/zelle-icon.png",
+			"alt":"imagen de banca"
+		}
+	],
+	"footer":[
+		{
+			"imagen":"https://betswing.com/wp-content/themes/theme02/images/logo-w.png",
+			"url":"#",
+			"text":"",
+			"alt":"imagen en blanco de logo"
+		},
+		{
+			"imagen":"",
+			"url":"#",
+			"text":"Sobre Betswing"
+		},
+		{
+			"imagen":"",
+			"url":"#",
+			"text":"Calculadora Parlay"
+		},
+		{
+			"imagen":"",
+			"url":"#",
+			"text":"Reglas Generales"
+		},
+		{
+			"imagen":"",
+			"url":"#",
+			"text":"Juego Responsable"
+		}
+	],
+	"subfooter":[
+		{
+			"text":"Copyrights ℗ 2022 Todos los Derechos Reservados Betswing."
+		},
+		{
+			"text":"+18"
 		}
 	]
 }

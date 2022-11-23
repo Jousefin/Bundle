@@ -79,6 +79,7 @@ export const tnsSingle = () => {
 		slideBy: 1,
 		speed: 1000,
 		autoplay: true,
+		autoplayButtonOutput: false,
 		mode: 'gallery',
 		mouseDrag: true,
 		controlsText: [

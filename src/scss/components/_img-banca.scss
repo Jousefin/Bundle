@@ -1,11 +1,15 @@
 .section-banca{
-	display: flex;
+	display: block;
 	background: #ff6600;
 	justify-content: center;
 	align-items: center;
 	max-width: 1200px;
 	margin: 1rem auto;
-	padding: 0 2rem;
+	padding: 0.8rem;
+	@include from(m){
+		display: flex;
+		padding: 0 2rem;
+	}
 	&__title{
 		min-width: 20%;
 	}
@@ -17,7 +21,6 @@ h1 {
 	font-size: 16px;
 }
 .containter-banca{
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;

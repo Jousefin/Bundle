@@ -1,4 +1,25 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.login = login;
+function login() {
+	var d = document,
+	    open = d.getElementById("btnLogin"),
+	    close = d.getElementById("closeLogin"),
+	    modal = d.getElementById("login");
+	open.addEventListener("click", function () {
+		modal.classList.add("active");
+	});
+
+	close.addEventListener("click", function () {
+		modal.classList.remove("active");
+	});
+}
+
+},{}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -82,7 +103,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -101,17 +122,20 @@ var topNav = exports.topNav = function topNav() {
 	});
 };
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 var _topNav = require('./components/topNav');
 
 var _tnsSlider = require('./components/tns-slider');
 
+var _Loginmodal = require('./components/Loginmodal');
+
 (0, _topNav.topNav)();
 (0, _tnsSlider.tnsSingle)();
 (0, _tnsSlider.tnsBanca)();
+(0, _Loginmodal.login)();
 
-},{"./components/tns-slider":1,"./components/topNav":2}]},{},[3]);
+},{"./components/Loginmodal":1,"./components/tns-slider":2,"./components/topNav":3}]},{},[4]);
 
 //# sourceMappingURL=scripts-min.js.map

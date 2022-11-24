@@ -1,7 +1,4 @@
 .tns-single{
-	& > div:nth-child(odd){
-		background        : red;
-	}
 	& > div:nth-child(even){
 		background-image        :url(/src/img/banner/LakersVSPistons_banner.png);
 	}
@@ -13,7 +10,17 @@
 		align-items       : center;
 		span{color        : white;}
 	}
-
-	
 }
+
+
+@include from(m){
+	#tnsSingle img{
+		max-width: 100%;
+		background-color: red;
+	}
+}
+
+
+
+
 

@@ -61,7 +61,7 @@
           </div>
           <div class="top-nav__buttons">
             <button class="btn btn__login">REGISTRATE</button>
-            <button class="btn btn__register">INICIAR SESIÓN</button>
+            <button class="btn btn__register" id="btnLogin">INICIAR SESIÓN</button>
             <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
           </div>
         </div>
@@ -71,19 +71,47 @@
       <div class="ed-container">
         <section class="slider-container">      
           <div class="tns-single" id="tnsSingle">
-                        <div class="tns-single__content"><a href="#"><img src="https://betswing.com/wp-content/uploads/Quniela_banner.png" alt="image"></a></div>
-                        <div class="tns-single__content"><a href="#"><img src="https://betswing.com/wp-content/uploads/PromoFranelas_Banner.png" alt="image"></a></div>
-                        <div class="tns-single__content"><a href="#"><img src="https://betswing.com/wp-content/uploads/Quniela_banner.png" alt="image"></a></div>
+                        <div class="tns-single__content"><a href="#"><img class="img-fluid" src="https://betswing.com/wp-content/uploads/Quniela_banner.png" alt="image"></a></div>
+                        <div class="tns-single__content"><a href="#"><img class="img-fluid" src="https://betswing.com/wp-content/uploads/PromoFranelas_Banner.png" alt="image"></a></div>
+                        <div class="tns-single__content"><a href="#"><img class="img-fluid" src="https://betswing.com/wp-content/uploads/Quniela_banner.png" alt="image"></a></div>
           </div>
         </section>
       </div>
-      <div class="ed-grid s-grid-3 pasos">
-                <div class="pasos__card"><span class="pasos__num">1</span><span class="pasos__text">Regístrate</span></div>
-                <div class="pasos__card"><span class="pasos__num">2</span><span class="pasos__text">Carga tu cuenta</span></div>
-                <div class="pasos__card"><span class="pasos__num">3</span><span class="pasos__text">¡Y A GANAR!</span></div>
+      <div class="login" id="login">
+        <div class="header-login">
+          <button id="closeLogin">X</button>
+        </div>
+        <form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false"></form>
+        <div class="form-group">
+          <label for="username">Usuario</label>
+          <input class="form-control" type="text" name="username" required="">
+        </div>
+        <div class="form-group">
+          <label for="password">Contrase&ntilde;a</label>
+          <input class="form-control" type="password" name="password" required="">
+        </div>
+        <div class="text-center mt-2"><small class="text-danger" name="msj_error_lg"></small></div>
+        <div class="form-group mt-5">
+          <div class="col-sm-12 controls"></div>
+        </div>
+        <button class="btn btn-success btn-block idt" type="submit" name="btn-login"><span id="id-login-loading" name="msj_loading"></span><span name="msj_login">Ingresar</span></button>
+      </div>
+      <div class="ed-grid s-grid-1 m-grid-3 pasos">
+                <div class="pasos__card">
+                  <p class="pasos__num">1</p>
+                  <p class="pasos__text">Regístrate</p>
+                </div>
+                <div class="pasos__card">
+                  <p class="pasos__num">2</p>
+                  <p class="pasos__text">Carga tu cuenta</p>
+                </div>
+                <div class="pasos__card">
+                  <p class="pasos__num">3</p>
+                  <p class="pasos__text">¡Y A GANAR!</p>
+                </div>
       </div>
       <div class="ed-grid">
-        <div class="ed-grid s-grid-4 gallery"><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-BARQUISIMETO.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/QUINIELA-QATAR-MUNDIAL-betswing-Tw.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-APP.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-HORARIO-DE-ATENCION.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-APP.jpg" alt="imagen de bono"></a>
+        <div class="ed-grid s-grid-1 m-grid-4 gallery"><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-BARQUISIMETO.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/QUINIELA-QATAR-MUNDIAL-betswing-Tw.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-APP.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-HORARIO-DE-ATENCION.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/LOCAL-BETSWING-PTO-LA-CRUZ.jpg" alt="imagen de bono"></a><a href="#"><img class="img-bonos" src="https://betswing.com/wp-content/uploads/BETSWING-APP.jpg" alt="imagen de bono"></a>
         </div>
       </div>
       <div class="section-banca">
@@ -103,20 +131,15 @@
     </main>
     <footer class="main-footer">
       <div class="ed-grid footer">
-        <ul class="footer__nav"><img class="sublogo" src="https://betswing.com/wp-content/themes/theme02/images/logo-w.png" alt="imagen"><a href="#">
+        <ul class="ed-grid s-grid-1 m-grid-4 footer__nav"><img class="sublogo" src="https://betswing.com/wp-content/themes/theme02/images/logo-w.png" alt="imagen"><a href="#">
                       <li class="textFooter">Sobre Betswing</li></a><a href="#">
                       <li class="textFooter">Calculadora Parlay</li></a><a href="#">
                       <li class="textFooter">Reglas Generales</li></a><a href="#">
-                      <li class="textFooter">Juego Responsable</li></a><img class="sublogo" src="https://betswing.com/wp-content/themes/theme02/images/logo-w.png" alt="imagen"><a href="undefined">
-                      <li class="textFooter"></li></a><a href="undefined">
-                      <li class="textFooter"></li></a><a href="undefined">
-                      <li class="textFooter"></li></a><a href="undefined">
-                      <li class="textFooter"></li></a>
+                      <li class="textFooter">Juego Responsable</li></a>
         </ul>
         <ul class="footer__legal">
                     <li class="textFooter">Copyrights ℗ 2022 Todos los Derechos Reservados Betswing.</li>
                     <li class="textFooter">+18</li>
-                    <li class="textFooter">Juego Responsable</li>
         </ul>
       </div>
     </footer>

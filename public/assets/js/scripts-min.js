@@ -20,6 +20,28 @@ function login() {
 }
 
 },{}],2:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var accordion = exports.accordion = function accordion() {
+    var d = document,
+        acc = document.getElementsByClassName("accordion-container__btn-acc");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+};
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -103,7 +125,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -122,7 +144,7 @@ var topNav = exports.topNav = function topNav() {
 	});
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 var _topNav = require('./components/topNav');
@@ -131,11 +153,19 @@ var _tnsSlider = require('./components/tns-slider');
 
 var _Loginmodal = require('./components/Loginmodal');
 
-(0, _topNav.topNav)();
-(0, _tnsSlider.tnsSingle)();
-(0, _tnsSlider.tnsBanca)();
-(0, _Loginmodal.login)();
+var _promociones = require('./components/promociones');
 
-},{"./components/Loginmodal":1,"./components/tns-slider":2,"./components/topNav":3}]},{},[4]);
+(function () {
+	(0, _topNav.topNav)();
+	(0, _Loginmodal.login)();
+	if (document.body.classList.contains('home')) {
+		(0, _tnsSlider.tnsSingle)();
+		(0, _tnsSlider.tnsBanca)();
+	} else if (document.body.classList.contains('promociones')) {
+		(0, _promociones.accordion)();
+	}
+})();
+
+},{"./components/Loginmodal":1,"./components/promociones":2,"./components/tns-slider":3,"./components/topNav":4}]},{},[5]);
 
 //# sourceMappingURL=scripts-min.js.map

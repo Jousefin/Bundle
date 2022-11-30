@@ -101,11 +101,11 @@
 
 	"menu": [
 		{
-			"url": "https://ed-grid.com/documentacion/layout-css-grid.html",
+			"url": "deportes.html",
 			"menuItem": "DEPORTES"
 		},
 		{
-			"url": "page2.html",
+			"url": "promociones.html",
 			"menuItem": "PROMOCIONES"
 		},
 		{

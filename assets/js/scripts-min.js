@@ -9,7 +9,7 @@ function login() {
 	var d = document,
 	    open = d.getElementById("btnLogin"),
 	    close = d.getElementById("closeLogin"),
-	    modal = d.getElementById("login");
+	    modal = d.getElementById("login-container");
 	open.addEventListener("click", function () {
 		modal.classList.add("active");
 	});

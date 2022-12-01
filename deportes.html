@@ -85,24 +85,26 @@
                     <li class="textFooter">+18</li>
         </ul>
       </div>
-      <div class="login" id="login">
-        <div class="header-login">
-          <button id="closeLogin">X</button>
+      <div class="login-container" id="login-container">
+        <div class="login" id="login">
+          <div class="header-login">
+            <button id="closeLogin">X</button>
+          </div>
+          <form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false"></form>
+          <div class="form-group">
+            <label for="username">Usuario</label>
+            <input class="form-control" type="text" name="username" required="">
+          </div>
+          <div class="form-group">
+            <label for="password">Contrase&ntilde;a</label>
+            <input class="form-control" type="password" name="password" required="">
+          </div>
+          <div class="text-center mt-2"><small class="text-danger" name="msj_error_lg"></small></div>
+          <div class="form-group mt-5">
+            <div class="col-sm-12 controls"></div>
+          </div>
+          <button class="btn btn-success btn-block idt" type="submit" name="btn-login"><span id="id-login-loading" name="msj_loading"></span><span name="msj_login">Ingresar</span></button>
         </div>
-        <form name="LoginForm" action="javascript:void(0)" onsubmit="BackEndLogin(this); return false"></form>
-        <div class="form-group">
-          <label for="username">Usuario</label>
-          <input class="form-control" type="text" name="username" required="">
-        </div>
-        <div class="form-group">
-          <label for="password">Contrase&ntilde;a</label>
-          <input class="form-control" type="password" name="password" required="">
-        </div>
-        <div class="text-center mt-2"><small class="text-danger" name="msj_error_lg"></small></div>
-        <div class="form-group mt-5">
-          <div class="col-sm-12 controls"></div>
-        </div>
-        <button class="btn btn-success btn-block idt" type="submit" name="btn-login"><span id="id-login-loading" name="msj_loading"></span><span name="msj_login">Ingresar</span></button>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>

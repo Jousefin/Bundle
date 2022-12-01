@@ -4,7 +4,7 @@ export const accordion = () => {
         acc = document.getElementsByClassName("accordion-container__btn-acc");
     for (let i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
+            this.classList.toggle("accordion-container__active");
             const panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;

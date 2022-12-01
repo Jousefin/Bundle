@@ -14,5 +14,3 @@
 - BetSwing.com se reserva el derecho de hacer cambios en los términos y condiciones e incluso, eliminar la promoción cuando considere oportuno.
 - Esta promoción está sujeta a los términos y condiciones de BetSwing.com.
 - Promoción válida por tiempo limitado.
-
-	<a class="lorem" href="https://google.com" target="_blank">Kendoll Castro</a>

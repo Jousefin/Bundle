@@ -1,0 +1,5 @@
+mixin promo(img, text)
+	div(class='tnsBanca__content'): img(src=`${img}`, alt=alt): text(class="info")=text
+-for (var i = 0; i < imgBanca.length; i++)
+	- var d = imgBanca[i]
+	+promo(d.img, d.text)

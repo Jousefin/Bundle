@@ -1,17 +1,18 @@
-div( id="login" class="login")
-	div(class="header-login")
-		button(id="closeLogin") X
-	form(name='LoginForm' action='javascript:void(0)' onsubmit='BackEndLogin(this); return false')
-	.form-group
-		label(for='username') Usuario
-		input.form-control(type='text' name='username' required='')
-	.form-group
-		label(for='password') Contrase&ntilde;a
-		input.form-control(type='password' name='password' required='')
-	.text-center.mt-2
-		small.text-danger(name='msj_error_lg')
-	.form-group.mt-5
-		.col-sm-12.controls
-	button.btn.btn-success.btn-block.idt(type='submit' name='btn-login')
-			span#id-login-loading(name='msj_loading')
-			span(name='msj_login') Ingresar
+div(id="login-container" class="login-container")
+	div( id="login" class="login")
+		div(class="header-login")
+			button(id="closeLogin") X
+		form(name='LoginForm' action='javascript:void(0)' onsubmit='BackEndLogin(this); return false')
+		.form-group
+			label(for='username') Usuario
+			input.form-control(type='text' name='username' required='')
+		.form-group
+			label(for='password') Contrase&ntilde;a
+			input.form-control(type='password' name='password' required='')
+		.text-center.mt-2
+			small.text-danger(name='msj_error_lg')
+		.form-group.mt-5
+			.col-sm-12.controls
+		button.btn.btn-success.btn-block.idt(type='submit' name='btn-login')
+				span#id-login-loading(name='msj_loading')
+				span(name='msj_login') Ingresar

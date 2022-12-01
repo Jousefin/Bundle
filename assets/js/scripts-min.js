@@ -10,6 +10,7 @@ function login() {
 	    open = d.getElementById("btnLogin"),
 	    close = d.getElementById("closeLogin"),
 	    modal = d.getElementById("login-container");
+
 	open.addEventListener("click", function () {
 		modal.classList.add("active");
 	});
@@ -30,7 +31,7 @@ var accordion = exports.accordion = function accordion() {
         acc = document.getElementsByClassName("accordion-container__btn-acc");
     for (var i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
+            this.classList.toggle("accordion-container__active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;

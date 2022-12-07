@@ -1,12 +1,15 @@
-.accordion-container{
-    p.accordion-container__btn-acc.casino {
-        color: #444;
-        font-weight: 800;
-        background: #ff6600;
-    }
+.ed-container.casino{	
+			p.accordion-container__btn-acc.casino{
+			color: #444;
+			margin: 2vh;
+			font-weight: 800;
+			background: #ff6600;
+		}
 
     .accordion-container__panel.casinoText{
+		margin: 3vh;
         h1{
+			font-size: 2vh;
             font-weight: 600;
         }
     }

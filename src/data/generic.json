@@ -97,8 +97,6 @@
 			"live": "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
 		}
 	],
-
-
 	"menu": [
 		{
 			"url": "deportes.html",
@@ -109,11 +107,11 @@
 			"menuItem": "PROMOCIONES"
 		},
 		{
-			"url": "/envivo",
+			"url": "vivo.html",
 			"menuItem": "EN VIVO"
 		},
 		{
-			"url": "/casino",
+			"url": "casino.html",
 			"menuItem": "CASINO"
 		},
 		{
@@ -256,6 +254,28 @@
 		},
 		{
 			"text":"+18"
+		}
+	],
+	"imgCasino":[
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg",
+			"alt":"imagen de bono"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg",
+			"alt":"imagen de bono"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg",
+			"alt":"imagen de bono"
+		},
+		{
+			"url":"#",
+			"img":"https://betswing.com/wp-content/uploads/BETSWING_ACREDITACION-Y-RETIRO-EN-DOLARES_WEB.jpg",
+			"alt":"imagen de bono"
 		}
 	]
 }

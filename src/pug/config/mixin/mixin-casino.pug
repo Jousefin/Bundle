@@ -1,0 +1,5 @@
+mixin imgCasino(img, url, alt)
+	a(href=`${url}`): img(class="img-bonos" src=`${img}`, alt=alt)
+-for (var i = 0; i < imgCasino.length; i++)
+	- var d = imgCasino[i]
+	+imgCasino(d.img, d.url, d.alt)

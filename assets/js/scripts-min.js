@@ -43,6 +43,28 @@ var accordion = exports.accordion = function accordion() {
 };
 
 },{}],3:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var accordion = exports.accordion = function accordion() {
+    var d = document,
+        acc = document.getElementsByClassName("accordion-container__btn-acc");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("accordion-container__active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+};
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -126,7 +148,7 @@ var tnsSingle = exports.tnsSingle = function tnsSingle() {
 	});
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -145,7 +167,7 @@ var topNav = exports.topNav = function topNav() {
 	});
 };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 'use strict';
 
 var _topNav = require('./components/topNav');
@@ -156,17 +178,18 @@ var _Loginmodal = require('./components/Loginmodal');
 
 var _promociones = require('./components/promociones');
 
+var _casino = require('./components/casino');
+
 (function () {
 	(0, _topNav.topNav)();
 	(0, _Loginmodal.login)();
+	(0, _promociones.accordion)();
 	if (document.body.classList.contains('home')) {
 		(0, _tnsSlider.tnsSingle)();
 		(0, _tnsSlider.tnsBanca)();
-	} else if (document.body.classList.contains('promociones')) {
-		(0, _promociones.accordion)();
-	}
+	} else if (document.body.classList.contains('promociones')) {}
 })();
 
-},{"./components/Loginmodal":1,"./components/promociones":2,"./components/tns-slider":3,"./components/topNav":4}]},{},[5]);
+},{"./components/Loginmodal":1,"./components/casino":2,"./components/promociones":3,"./components/tns-slider":4,"./components/topNav":5}]},{},[6]);
 
 //# sourceMappingURL=scripts-min.js.map

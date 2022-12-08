@@ -1,0 +1,7 @@
+mixin imgLocales(img, alt)
+	img(class="img-bonos" src=`${img}`, alt=alt)
+-for (var i = 0; i < imgLocales.length; i++)
+	- var d = imgLocales[i]
+	+imgLocales(d.img, d.alt)
+
+

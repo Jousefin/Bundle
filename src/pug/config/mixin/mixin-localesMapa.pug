@@ -1,0 +1,5 @@
+mixin mapa(url)
+	iframe(class="mapa" src=`${url}`, frameborder="0" marginwidth="0" marginheight="0" scrolling="no")
+-for (var i = 0; i < mapa.length; i++)
+	- var d = mapa[i].url
+	+mapa(d)
